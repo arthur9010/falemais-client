@@ -1,16 +1,4 @@
-<template>
-  <q-page class="flex flex-center">
-    <select-region
-      @input="regionSelected = $event"
-      :options="regions"
-      option-label="name"
-      label="trest"
-    />
-  </q-page>
-</template>
-
-<script>
-import SelectRegion from '../components/select'
+import SelectRegion from '../../components/select'
 export default {
   components: {
     SelectRegion
@@ -34,4 +22,3 @@ export default {
     }
   },
 }
-</script>
