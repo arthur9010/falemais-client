@@ -1,5 +1,5 @@
 <template>
-    <q-select
+    <q-input
         outlined
         dense
         color="teal-13"

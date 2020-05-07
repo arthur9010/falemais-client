@@ -1,20 +1,28 @@
 import SelectRegion from '../../components/select'
+import InputMinutes from '../../components/input'
 export default {
   components: {
-    SelectRegion
+    SelectRegion,
+    InputMinutes
   },
   data: () => ({
+    show: false,
     regions: [],
-    regionSelected: 'null'
+    originSelected: {},
+    destinationRegion: {},
+    minutes: 0,
   }),
   created() {
     this.getRegions()
   },
   methods: {
+    calculate() {
+        
+    },
     async getRegions() {
-      let regions = await this.$axios.get('http://localhost:3000/region')
-      .then(res => res.data)
-      .catch(error => console.error(error))
+          let regions = await this.$axios.get('http://localhost:3000/region')
+          .then(res => res.data)
+          .catch(error => console.error(error))
       regions.forEach(region => {
         region['name'] = `${region['name']} (${region['ddd']})`
       })
