@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     calculate() {
-        
+        console.log(this.reg)
     },
     async getRegions() {
           let regions = await this.$axios.get('http://localhost:3000/region')

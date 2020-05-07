@@ -1,5 +1,9 @@
 export default {
     props: {
+        ruleRequired: {
+            type: Boolean,
+            default: false
+        },
         label: {
             type: String,
         },
@@ -7,7 +11,7 @@ export default {
             type: Array,
             required: true
         },
-        'option-label': {
+        optionLabel: {
             type: String
         }
     },

@@ -1,5 +1,9 @@
 export default {
     props: {
+        ruleRequired: {
+            type: Boolean,
+            default: false
+        },
         mask: {
             type: String
         },
