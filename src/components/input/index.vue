@@ -2,6 +2,7 @@
     <q-input
         outlined
         dense
+        stack-label
         color="teal-4"
         @input="$emit('input', value)"
         v-model="value"
