@@ -9,8 +9,9 @@
         </div>
       </div>
       <div class="left-box q-pa-lg">
-      <div>
-        <p>você é cliente aramo e não</p>
+      <div class="q-ml-lg text-color">
+        <p class="text-h6">Ainda não pussue o plano FaleMais?</p>
+        <p class="text-subtitle2">Se a resposta é SIM, calcule quanto iria economizar utilizando este plano</p>
       </div>
         <div class="row justify-around q-mb-md">
           <div class="col-5">
@@ -40,7 +41,7 @@
           </div>
           <div class="col-5 ">
             <q-btn 
-              color="teal-13" 
+              color="teal-4" 
               class="full-width full-heigth" 
               text-color="white"
             >

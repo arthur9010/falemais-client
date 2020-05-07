@@ -2,7 +2,7 @@
     <q-input
         outlined
         dense
-        color="teal-13"
+        color="teal-4"
         @input="$emit('input', value)"
         v-model="value"
         v-bind="$props"
