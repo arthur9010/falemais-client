@@ -47,7 +47,16 @@
           </div>
         </div>
       </q-form>
-      <p class="text-negative" v-if="error !== ''">{{error}}</p>
+      <p class="text-negative" v-if="resultError">{{error}}</p>
+      <q-table
+        v-else-if="table.data.length > 0"
+        :data="table.data"
+        :columns="table.columns"
+        row-key="name"
+        dense
+        flat
+        hide-bottom
+      />
   </q-page>
 </template>
 
