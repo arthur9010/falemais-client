@@ -8,7 +8,7 @@
   "author": "arthu <arthurmarcelosantanaalves@hotmail.com>",
   "private": true,
   "scripts": {
-    "start": "npx quasar dev",
+    "start": "node server"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
