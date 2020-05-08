@@ -56,7 +56,7 @@ export default {
   methods: {
     async calculate() {
       let query = `origin=${this.originRegion['ddd']}&destination=${this.destinationRegion['ddd']}&time=${this.minutes}`
-      let resultCalculation = await this.$axios.get('http://localhost:3000/api/plan/calculate?'+query)
+      let resultCalculation = await this.$axios.get('https://aramo-api.herokuapp.com/api/plan/calculate?'+query)
       this.resultError = resultCalculation.data.error
       if(resultCalculation.data.error) {
         this.error = resultCalculation.data.message
@@ -68,7 +68,7 @@ export default {
       this.table
     },
     async getRegions() {
-          let regions = await this.$axios.get('http://localhost:3000/api/region')
+          let regions = await this.$axios.get('https://aramo-api.herokuapp.com/api/region')
           .then(res => res.data)
           .catch(error => console.error(error))
       regions.forEach(region => {
