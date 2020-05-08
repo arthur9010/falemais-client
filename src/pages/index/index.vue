@@ -16,11 +16,12 @@
           <p class="text-h6">Ainda não pussue o plano FaleMais?</p>
           <p class="text-subtitle2">Se a resposta é SIM, calcule quanto iria economizar utilizando este plano</p>
         </div>
-        <q-form @submit="calculete">
+        <q-form @submit="calculate">
           <div class="row justify-around q-mb-md">
             <div class="col-5">
               <select-region
                 :rule-required="true"
+                name="teste"
                 @input="originRegion = $event"
                 :options="regions"
                 option-label="name"
@@ -30,7 +31,7 @@
             <div class="col-5">
               <select-region
                 :rule-required="true"
-                @input="destinatinRegion = $event"
+                @input="destinationRegion = $event"
                 :options="regions"
                 option-label="name"
                 label="Destino (DDD)"
@@ -58,6 +59,7 @@
             </div>
           </div>
         </q-form>
+        <p class="text-negative" v-if="error !== ''">{{error}}</p>
         </div>
       </div>
     </div>
