@@ -20,6 +20,7 @@ export default {
           field: 'name',
           label: 'Plano',
           align: 'left',
+          sortable: true
         },
         {
           name: 'withPlan',
@@ -30,7 +31,8 @@ export default {
             minimumFractionDigits: 2
           }),
           label: 'Com FaleMais',
-          align: 'left',
+          align: 'center',
+          sortable: true
         },
         {
           name: 'withoutPlan',
@@ -41,7 +43,8 @@ export default {
             minimumFractionDigits: 2
           }),
           label: 'Sem FaleMais',
-          align: 'left',
+          align: 'center',
+          sortable: true
         },
       ],
       data: []
