@@ -22,7 +22,8 @@
     "serve-static": "^1.14.1"
   },
   "devDependencies": {
-    "@quasar/app": "^1.0.0"
+    "@quasar/app": "^1.0.0",
+    "strip-ansi": "^3.0.1"
   },
   "engines": {
     "node": ">= 10.18.1",
